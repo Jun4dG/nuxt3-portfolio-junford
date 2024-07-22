@@ -49,6 +49,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #bd0081;
 }
 
 .section {
@@ -60,7 +61,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.content {
+.content, .education, .scrollable-content {
     max-width: 900px;
     background: rgba(255, 255, 255, 0.8);
     padding: 40px;
@@ -68,6 +69,94 @@ nav ul li a:hover {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.education img {
+    max-height: 150px;
+    border-radius: 20px;
+}
+
+.section-organizations img{
+    max-height: 150px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .scrollable-content {
+    display: inline-flex;
+    gap: 20px;
+  }
+
+  .organization-item {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.orgsection-title h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.educsection-title h1{
+    margin-top: 100px;
+    margin-bottom: -80px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.section-organizations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navigation-arrows button {
+    background-color: #7f0057;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .navigation-arrows button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+
+  .education-card h2 {
+    margin-bottom: 10px;
+    color: #0b0b0b;
+  }
+  
+  .education-card h3 {
+    margin-bottom: 10px;
+    color: #0b0b0b;
+  }
+  
+  .education-card p {
+    color: #7f0057;
+    margin-bottom: 5px;
+  }
 
 .section h1, .section h2 {
     margin-bottom: 15px;
@@ -99,6 +188,7 @@ nav ul li a:hover {
 .ttt1, .ttt2, .kasaba {
     max-width: 30%;
 }
+
 #cvLink a {
     color: black;
     font-weight: bold;
